@@ -8,8 +8,6 @@ section '.data' data readable writable
 szIsAdmin db "You Have Admin Rights",0xA, 0
 szNotAdmin db "You Do Not Have Admin Rights",0xA, 0
 
-szAdv db 'advpack.dll',0
-
 section '.text' code readable writable executable
 start:
         invoke IsNTAdmin, 0, 0
